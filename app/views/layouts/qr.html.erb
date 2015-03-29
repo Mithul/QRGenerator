@@ -9,17 +9,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
     <div class="container">
- <% if params[:controller]!='codes' %>
-    <script> <%= add_gritter("Please Click the 'QR Code Generator link' on the navbar", :title => "M Mithul") %></script>
-    <%end%>
-       <%= render 'layouts/messages' %>
+
        <%= yield %>
        </div>
-    </main>
   </body>
 </html>

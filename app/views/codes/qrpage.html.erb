@@ -1,0 +1,33 @@
+<% @qr.each do |qr| %>
+	<table>
+	<% qr.modules.each_index do |x| %>
+	  <tr>  
+	  <% qr.modules.each_index do |y| %>
+	   <% if qr.dark?(x,y) %>
+	    <td class="black"/>
+	   <% else %>
+	    <td class="white"/>
+	   <% end %>
+	  <% end %>
+	  </tr>
+	<% end %>
+	</table>
+<% end %>
+
+
+<% @codes.each do |code| %>
+	<div class="row">
+	<% (1..10).each do  %>
+		<div class="codes">
+		<%= image_tag code.qrcode.url, class: 'qr' %>
+		<div class="code"><%= code.qr %></div>
+		</div>
+	<% end %>
+	</div>
+	<!-- <br> -->
+<% end %>
+ <script> 
+ setTimeout(function(){
+ <%= add_gritter("The page is optimised for printing as an A3 sheet. ", :title => "M Mithul") %>;
+<%= add_gritter("Please wait for this notification to close before printing", :title => "M Mithul") %>},1000);
+ </script>

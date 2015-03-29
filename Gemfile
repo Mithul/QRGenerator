@@ -31,3 +31,12 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rubocop'
 end
+#Later
+
+gem 'rqrcode'
+gem 'rqrcode_png'
+gem 'dragonfly', '~> 1.0.7'
+gem "gritter", "1.1.0"
+# gem 'rmagick'
+gem 'wicked_pdf'
+# gem 'wkhtmltopdf-binary'

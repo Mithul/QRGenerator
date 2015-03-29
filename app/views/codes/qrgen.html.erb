@@ -1,0 +1,22 @@
+<h3>QR Generator</h3>
+<%= form_for :list, :url => url_for(:controller => 'codes', :action => 'qrpage'), :method => 'GET' do |f| %>
+ 	<%= f.label :start %>:
+  	<%= f.text_field :start , :autofocus => true, class: 'form-control' %>
+  	<br />
+  	<%= f.label :end %>:
+  	<%= f.text_field :end , class: 'form-control'%>
+  	<br>
+  	<%= f.label :check %>:
+  	<%= f.check_box :check , class: 'form-control'%>
+
+  	<%= f.submit :submit, class: 'btn btn-primary' %>
+<% end %>
+ <script> 
+ setTimeout(function(){
+ <%= add_gritter("Please enter the starting and the ending range of the QR codes to be generated", :title => "M Mithul") %>},1000);
+ setTimeout(function(){
+ <%= add_gritter("Make sure the range has an interval of 16", :title => "M Mithul")  %>},3000);
+ setTimeout(function(){
+ <%= add_gritter("The 'Check' Checkbox will check if any of the QR codes in the range specified have already been generated", :title => "M Mithul") %>},5000);
+ </script>
+
