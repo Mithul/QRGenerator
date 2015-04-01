@@ -37,6 +37,7 @@ gem 'rqrcode'
 gem 'rqrcode_png'
 gem 'dragonfly', '~> 1.0.7'
 gem "gritter", "1.1.0"
-# gem 'rmagick'
+gem 'rmagick'
 gem 'wicked_pdf'
+# gem 'qrscanner'
 # gem 'wkhtmltopdf-binary'

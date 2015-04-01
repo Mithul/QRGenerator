@@ -160,6 +160,7 @@ GEM
     ref (1.0.5)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rmagick (2.13.4)
     rqrcode (0.4.2)
     rqrcode_png (0.1.5)
       chunky_png
@@ -241,6 +242,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.0)
   rails_layout
+  rmagick
   rqrcode
   rqrcode_png
   rubocop
